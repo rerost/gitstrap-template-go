@@ -1,0 +1,25 @@
+gitstrap:
+    version: v1
+    github:
+        repo:
+            name: git-template
+            description: "Templates. For gitstrap. plz use https://github.com/rerost/gitstrap"
+            private: false
+    templates:
+        - name: "README.md"
+          location: "${GOPATH}/src/github.com/rerost/git-template/README.md"
+        - name: ".circleci/config.yml"
+          location: "${GOPATH}/src/github.com/rerost/git-template/.circleci/config.yml"
+        - name: "Dockerfile"
+          location: "${GOPATH}/src/github.com/rerost/git-template/Dockerfile"
+        - name: ".dockerignore"
+          location: "${GOPATH}/src/github.com/rerost/git-template/.dockerignore"
+        - name: ".gitignore"
+          location: "${GOPATH}/src/github.com/rerost/git-template/.gitignore"
+        - name: "go.mod"
+          location: "${GOPATH}/src/github.com/rerost/git-template/go.mod"
+        - name: "main.go"
+          location: "${GOPATH}/src/github.com/rerost/git-template/main.go"
+        - name: "Makefile"
+          location: "${GOPATH}/src/github.com/rerost/git-template/Makefile"
+    params:
